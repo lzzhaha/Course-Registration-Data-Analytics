@@ -7,13 +7,13 @@
 
 
 from collection_util import collection_handler
-from crawling_util import crawling_handler
+from testCrawl import crawling_util
 from course_search_util import course_search_handler
 from prediction_util import prediction_handler
 from training_util import training_handler
 
 
-# In[4]:
+# In[2]:
 
 
 def main():
@@ -37,7 +37,7 @@ def main():
         if (choice == "1"):
             collection_handler()
         elif (choice == "2"):
-            crawling_handler()
+            crawling_util.crawling_handler()
         elif (choice == "3"):
             course_search_handler()
         elif (choice == "4"):
@@ -51,9 +51,9 @@ def main():
             print("Invalid Input!")
 
 
-# In[5]:
+# In[3]:
 
 
 if __name__ == "__main__":
-   main()
+     main()
 
